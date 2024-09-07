@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Anisha Shail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Hi, I'm Anisha Shail</h1>
+        <p>Final Year B.Tech Student - Software Developer & Full-Stack Enthusiast</p>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a final year B.Tech student specializing in Computer Science and Engineering. I am passionate about web development, machine learning, and building real-world applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project" data-modal="malwareModal">
+            <h3>Malware Detection App</h3>
+            <p>A Python-based malware detection tool using machine learning algorithms like SVM, Decision Tree, and Random Forest.</p>
+            <button class="view-project">View Details</button>
+        </div>
+        <div class="project" data-modal="sudokuModal">
+            <h3>Sudoku Solver</h3>
+            <p>Built a Java-based Sudoku solver with a graphical interface using the Swing library.</p>
+            <button class="view-project">View Details</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:anishashail27@gmail.com">anishashail27@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anisha-shail-485504224/" target="_blank">linkedin.com/in/anishashail</a></p>
+        <p>GitHub: <a href="https://github.com/anishashail">github.com/anishashail</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anisha Shail</p>
+    </footer>
+
+    <!-- Modals for Project Details -->
+    <div id="malwareModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Malware Detection App</h2>
+            <p>Detailed description of the malware detection app, including technologies, challenges, and results.</p>
+        </div>
+    </div>
+
+    <div id="sudokuModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sudoku Solver</h2>
+            <p>Detailed description of the Sudoku solver, including algorithms, interface design, and functionality.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
